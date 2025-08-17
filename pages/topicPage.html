@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topics Page</title>
+  <link rel="stylesheet" href="../css/topicPage.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <button class="back-btn">
+      <img src="../assets/icons8-back-45.png" onclick="window.history.back()" alt="Back">
+    </button>
+    <h1 class="nav-title">Topics</h1>
+  </nav>
+
+  <!-- Add Topic Button -->
+  <div class="add-btn-container">
+    <button class="add-btn" id="addTopic">+ Add Topic</button>
+  </div>
+  <h2 class="subject-name"></h2>
+  <!-- Topic List -->
+  <div class="topics-list">
+    
+  </div>
+
+  <!-- <a href="../pages/multipleTaskPage.html">Tasks</a> -->
+
+  <!-- Popup Modal -->
+  <div class="modal" id="topicModal">
+    <div class="modal-content">
+      <h2>Add New Topic</h2>
+      <div class="modal-actions">
+        <form action="" id="topicForm" name="topicInput">
+          <input type="text" placeholder="Enter topic name" id="topicInput" required>
+          <button class="cancel-btn" id="cancleBtn" type="button">Cancel</button>
+          <button class="save-btn" id="saveBtn" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script type="module" src="../js/topicPage.js"></script>
+</html>

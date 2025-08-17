@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks Page</title>
+  <link rel="stylesheet" href="../css/multipleTaskPage.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <button class="back-btn">
+      <img src="../assets/icons8-back-45.png" onclick="window.history.back()" alt="Back">
+    </button>
+    <h1 class="nav-title">Tasks</h1>
+  </nav>
+
+  <!-- Add Task Button -->
+  <div class="add-btn-container">
+    <button class="add-btn" id="addTask">+ Add Task</button>
+  </div>
+  <h2 class="topic-name"></h2>
+  <!-- Task List -->
+  <div class="tasks-list">
+    
+  </div>
+
+  <!-- Popup Modal -->
+  <div class="modal" id="taskModal">
+    <div class="modal-content">
+      <h2>Add New Task</h2>
+      <div class="modal-actions">
+        <form action="" id="taskForm" name="taskInput">
+        <input type="text" placeholder="Enter task name" id="taskInput" required>
+        <label for="taskType">Type of task</label>
+        <select name="" id="taskType">
+            <option value="Concept">Concept</option>
+            <option value="Practice Set">Practice Set</option>
+        </select>
+        <textarea id="task-description" placeholder="Entre description (optional)"></textarea>
+        <div>
+            <button class="cancel-btn" id="cancleBtn" type="button">Cancel</button>
+            <button class="save-btn" id="saveBtn" type="submit">Save</button>
+        </div>
+       </form>
+        </div>
+    </div>
+  </div>
+
+</body>
+<script type="module" src="../js/multipleTaskPage.js"></script>
+</html>

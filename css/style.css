@@ -1,0 +1,99 @@
+
+
+/* Full-page overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255); /* dark transparent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Spinner */
+.loading-spinner {
+  border: 6px solid #e0e0e0; /* light gray */
+  border-top: 6px solid #1e56a0; /* blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Message Text */
+.loading-message {
+  color: rgb(95, 92, 92);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border-width: 5px;
+  }
+
+  .loading-message {
+    font-size: 1rem;
+  }
+}
+
+
+ /* msgCard-Style  */
+.message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 95%;       /* Max width 90% of viewport width */
+  min-width: 200px;     /* Minimum width for better readability */
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 5px solid;
+  color: white;
+  background-color: #1e56a0;;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  opacity: 0.9;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+  word-wrap: break-word; /* Break long words if needed */
+  text-align: center;    /* Center text */
+}  
+
+.message.alert {
+  border-color: #f39c12;
+}  
+
+.message.success {
+  border-color: #27ae60;
+}  
+
+.message.error {
+  border-color: #c0392b;
+}  
+
+/* Optional: smaller font on very small screens */
+@media (max-width: 400px) {
+  .message {
+    font-size: 12px;
+    padding: 10px 15px;
+  }  
+}  

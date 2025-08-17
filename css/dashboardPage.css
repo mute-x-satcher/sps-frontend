@@ -1,0 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid #1e56a0; /* Blue border bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: xx-large;
+  padding: 12px 20px;
+}
+
+.nav-title {
+  font-size: 28px;
+  color: #333;
+  color: #1e56a0;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* Right Side Menu */
+.nav-right {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: 1px solid #1e56a0;
+  color: #1e56a0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background-color: #1e56a0;
+  color: #fff;
+}
+
+/* Dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #fff;
+  border: 1px solid #1e56a0;
+  border-radius: 6px;
+  font-size: small;
+  color: 1e56a0;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  min-width: 120px;
+  z-index: 10;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Task Container */
+.task-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Task Card */
+.task-card {
+  background: #fff;
+  border: 1px solid #1e56a0;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+}
+
+.header{
+  margin-top: 10px;
+  text-align: center;
+  font-family:  'Calibri'
+}
+
+/* Header */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-name {
+  font-size: 18px;
+  color: #222;
+}
+
+.task-type {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Buttons */
+ .details-btn {
+  border: none;
+} 
+
+.task-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.complete-btn {
+  background: #058d25;
+  border: none;
+  color: #fff;
+  border: 1px solid black;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.complete-btn:hover {
+  background: #058d25;
+}
+
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1e56a0; /* Blue */
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.fab:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
