@@ -56,6 +56,7 @@ loginForm.addEventListener('submit',(e)=>{
         setLoading(false)
         if(res.status == 200){
             showMessage('Login Successful','success')
+              localStorage.setItem('localUserInfo',JSON.stringify(response.userInfo))
             window.location.href = '../pages/dashboardPage.html'
         }
         else{

@@ -1,9 +1,11 @@
 import BASE_URL from '../url/baseurl.js'
 
 function appendSubjects() {
+    console.log('appendingSubjects')
     const subjectList = document.querySelector('.subjects-list')
     const { _id: accountId } = JSON.parse(localStorage.getItem('localUserInfo'))
     const query = { accountId }
+    console.log(accountId)
     const url = `${BASE_URL}/subject/get`
     const allSubjects = fetch(url, {
         method: 'POST',
