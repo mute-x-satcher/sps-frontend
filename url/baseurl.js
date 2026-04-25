@@ -1,4 +1,5 @@
 const LOCAL_URL = 'http://localhost:3001';
 const REMOTE_URL = 'https://sps-backend-eryv.onrender.com'
-const BASE_URL = REMOTE_URL;
+const CLOUDFLARE_URL = ' https://stack-museums-craft-hat.trycloudflare.com'
+const BASE_URL = CLOUDFLARE_URL;
 export default BASE_URL
