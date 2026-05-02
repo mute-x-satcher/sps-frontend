@@ -100,9 +100,10 @@ function appendDasTask(){
         taskHeader.append(taskHeaderDiv)
         taskHeader.append(taskDetails)
         
+        console.log(task)
         const isCompleted = task.taskDueDates.find((date) => {
-          console.log(date)
-          if(date.dueDate == response.dateString && date.isCompleted == true){
+          // console.log('See:',date)
+          if(date.dueDate == response.taskDate && date.isCompleted == true){
             return date
           }
         })
