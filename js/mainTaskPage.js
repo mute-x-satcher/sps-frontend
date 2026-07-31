@@ -7,16 +7,19 @@ const taskName = document.createElement('div')
 const taskType = document.createElement('div')
 const taskTopic = document.createElement('div')
 const taskSubject = document.createElement('div')
+const taskCreatedAt = document.createElement('div')
 
 taskName.textContent = `Task: ${currentTask.taskName}`
 taskType.textContent = `Type: ${currentTask.taskType}`
 taskTopic.textContent = `Topic: ${currentTask.topicId.topicName}`
 taskSubject.textContent = `Subject: ${currentTask.subjectId.subjectName}`
+taskCreatedAt.textContent = `Created At: ${currentTask.createdAt}
 
 taskInfo.append(taskName)
 taskInfo.append(taskTopic)
 taskInfo.append(taskSubject)
 taskInfo.append(taskType)
+taskInfo.append(taskCreatedAt)
 
 if(currentTask.taskDescription != ""){
     const taskDescription = document.createElement('div')
